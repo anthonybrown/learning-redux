@@ -1,0 +1,12 @@
+{
+  "name": "learnRedux-wesbos",
+  "version": "1.0.0",
+  "description": "Learn to use Redux with Wes Bos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["React", "redux", "ES6"],
+  "author": "Tony Brown",
+  "license": "ISC"
+}
