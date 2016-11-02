@@ -3,10 +3,10 @@ import { render }   from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 // import css
-import css       from './styles/style.styl'
-import App from './components/App';
-import Single    from './components/Single';
-import PhotoGrid from './components/PhotoGrid';
+import css                from './styles/style.styl'
+import App                from './components/App';
+import Single             from './components/Single';
+import PhotoGrid          from './components/PhotoGrid';
 import store, { history } from './store'
 
 const router = (
