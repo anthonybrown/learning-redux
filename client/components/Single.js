@@ -1,10 +1,28 @@
 import React, {Component} from 'react'
+import Photo from './Photo'
+import Comments from './Comments'
 
 class Single extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+
   render() {
+    // index of the post
+    const i = this.props.posts.findIndex((post) =>
+      post.code === this.props.params.postId
+    )
+    // get us the post
+    const post = this.props.posts[i]
     return (
       <div className='single-photo'>
-        <h3>I am the single page</h3>
+        <Photo
+          i={i}
+          post={post}
+          {...this.props}
+        />
+        <Comments />
       </div>
     )
   }
